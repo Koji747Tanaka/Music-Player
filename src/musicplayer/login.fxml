@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="musicplayer.LoginController">
+    <children>
+        <Button layoutX="63.0" layoutY="57.0" mnemonicParsing="false" onAction="#LoginpanelShow" prefHeight="59.0" prefWidth="221.0" text="Log In" />
+        <Button layoutX="318.0" layoutY="57.0" mnemonicParsing="false" onAction="#SignuppanelShow" prefHeight="59.0" prefWidth="221.0" text="Sigin Up" />
+        <AnchorPane fx:id="panel_login" layoutY="147.0" prefHeight="334.0" prefWidth="549.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <Button fx:id="btn_login" layoutX="61.0" layoutY="232.0" mnemonicParsing="false" onAction="#Login" prefHeight="59.0" prefWidth="479.0" text="Log In" />
+                <TextField fx:id="txt_username" layoutX="61.0" layoutY="80.0" prefHeight="40.0" prefWidth="479.0" promptText="Enter Username" />
+                <PasswordField fx:id="txt_password" layoutX="61.0" layoutY="156.0" prefHeight="40.0" prefWidth="479.0" promptText="Enter Password" />
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="panel_signup" layoutY="147.0" prefHeight="334.0" prefWidth="549.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <TextField fx:id="txt_username_up" layoutX="61.0" layoutY="32.0" prefHeight="40.0" prefWidth="479.0" promptText="Enter Username" />
+                <TextField fx:id="txt_password_up" layoutX="61.0" layoutY="102.0" prefHeight="40.0" prefWidth="479.0" promptText="Enter Password" />
+                <TextField fx:id="txt_email_up" layoutX="61.0" layoutY="175.0" prefHeight="40.0" prefWidth="479.0" promptText="Enter Email" />
+                <Button fx:id="btn_signup" layoutX="61.0" layoutY="249.0" mnemonicParsing="false" onAction="#make_new_user" prefHeight="51.0" prefWidth="479.0" text="Sign Up" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

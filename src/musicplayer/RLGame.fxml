@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="musicplayer.RLGameController">
+   <children>
+      <Button fx:id="btn_play" layoutX="33.0" layoutY="77.0" mnemonicParsing="false" onAction="#playWord" prefHeight="59.0" prefWidth="353.0" text="Play" />
+      <Button fx:id="btn_L" layoutX="33.0" layoutY="200.0" mnemonicParsing="false" onAction="#answerL" prefHeight="109.0" prefWidth="152.0" text="L" />
+      <Button fx:id="btn_R" layoutX="234.0" layoutY="200.0" mnemonicParsing="false" onAction="#answerR" prefHeight="109.0" prefWidth="152.0" text="R" />
+      <Label fx:id="answerCheck" layoutX="181.0" layoutY="149.0" prefHeight="23.0" prefWidth="57.0" text="answer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Text layoutX="33.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clieck &quot;Play&quot; and choose what you hear!">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_menu" layoutX="424.0" layoutY="336.0" mnemonicParsing="false" onAction="#goBackToMenu" prefHeight="26.0" prefWidth="137.0" text="Menu" />
+      <Button fx:id="btn_next" layoutX="34.0" layoutY="336.0" mnemonicParsing="false" onAction="#playNextWord" prefHeight="26.0" prefWidth="353.0" text="Next" />
+      <Label layoutX="455.0" layoutY="83.0" text="Correct Record" />
+      <Label layoutX="451.0" layoutY="192.0" text="Incorrect Record" />
+      <Text fx:id="correctNumTxt" layoutX="491.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="wrongNumTxt" layoutX="491.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

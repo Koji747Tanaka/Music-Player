@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="musicplayer.RLGameController">
+   <children>
+      <Button fx:id="btn_play" layoutX="70.0" layoutY="93.0" mnemonicParsing="false" onAction="#playWord" prefHeight="25.0" prefWidth="461.0" text="Play" />
+      <Button fx:id="btn_L" layoutX="70.0" layoutY="221.0" mnemonicParsing="false" onAction="#answerL" prefHeight="139.0" prefWidth="193.0" text="L" />
+      <Button fx:id="btn_R" layoutX="338.0" layoutY="221.0" mnemonicParsing="false" onAction="#answerR" prefHeight="139.0" prefWidth="193.0" text="R" />
+      <Label fx:id="answerCheck" layoutX="263.0" layoutY="150.0" prefHeight="17.0" prefWidth="70.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
